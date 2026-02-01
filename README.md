@@ -18,7 +18,7 @@ Objetivos Principais:
 -Redes de computadores
 
 
-Cetificações alvo: 
+alvos centrais:
 
 Automação com Python
 Especialização em Linux, macOS
