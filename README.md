@@ -7,9 +7,9 @@ Objetivos Principais:
 
  Consolidar fundamentos de Redes e Linux.
 
- Obter a certificação CompTIA Security+ e cisco networking
+conseguir a certificação CompTIA Security+ e cisco networking
 
- Documentar várias maquinas resolvidas(TryHackMe/HackTheBox).
+Evidenciar várias maquinas resolvidas(TryHackMe/HackTheBox).
 
  
  Fundamentos em andamento:
