@@ -20,6 +20,7 @@ Evidenciar várias maquinas resolvidas(TryHackMe/HackTheBox).
 -Cisco Networking
 -TryHackMe - Pre-Security Path: https://tryhackme.com/p/arruda.kaique1]
 -Redes de computadores
+-Também tenho alguns fundamentos em HTML
 
 
 alvos centrais:
