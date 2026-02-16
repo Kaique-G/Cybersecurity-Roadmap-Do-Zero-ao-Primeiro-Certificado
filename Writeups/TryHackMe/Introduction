@@ -1,31 +1,35 @@
-# Relatório de Defesa: FakeBank (Laboratório Prático)
-
+Relatório de Defesa: FakeBank (Laboratório Prático)
 Este repositório documenta a resolução do laboratório "FakeBank" do TryHackMe, focado em mitigação de ataques em tempo real e configuração de firewalls.
 
-##  Descrição do Incidente
-- **IP Identificado do Atacante:** 32.122.195.63
-- **Horário do Ataque:** 10:21:39
-- **Duração do Evento:** 16 minutos e 32 segundos.
+Descrição do Incidente
+Durante o monitoramento da infraestrutura do FakeBank, foi detectada uma atividade suspeita de rede que visava comprometer a disponibilidade e a segurança do serviço do banco
 
----
+IP Identificado do Atacante: 32.122.195.63
 
-## Evidências do Processo
+Horário do Ataque: 10:21:39
 
-> **Obs:** Esta atividade faz parte dos meus estudos em Cibersegurança, unindo conhecimentos de Redes (SENAI Jandira) com prática de defesa.
+Duração do Evento: 16 minutos e 32 segundos.
 
-### 1. Planejamento no Caderno
-![Caderno](https://github.com/Kaique-G/Roteiro-de-Ciberseguranca-Do-Zero-ao-Primeiro-Certificado/blob/principal/fakebank-lab.jpg?raw=true)
+Procedimentos de Defesa Aplicados
+Com base na análise do tráfego malicioso, foram implementadas as seguintes medidas de segurança:
 
-### 2. Implementação Técnica
-![Commit](https://github.com/Kaique-G/Roteiro-de-Ciberseguranca-Do-Zero-ao-Primeiro-Certificado/blob/principal/image_a6b19a.png?raw=true)
+Passo 1: Bloqueio de IP (Contenção)
+A ação imediata foi o bloqueio total do endereço IP 32.122.195.63 nas regras de entrada do firewall. Esta medida visou cessar o ataque de forma instantânea para proteger os dados dos clientes.
 
----
+Passo 2: Implementação de Rate Limiting (Limitação de Requisições)
+Para evitar que o sistema sofra novos ataques de negação de serviço (DoS) e tumultos de conexão, foi configurada uma limitação de taxa (Rate Limit). Assim será permitido apenas um número conrolado de acessos por minuto
 
-## Procedimentos de Defesa Aplicados
+Passo 3: Atualização de Regras de Firewall (Prevenção)
+Configuração de regras preventivas e inteligência no Firewall para bloquear proativamente tentativas de conexões que apresentem comportamentos suspeitos. Isso garante que padrões de ataque semelhantes sejam barrados automaticamente no futuro, aumentando a resiliência da infraestrutura.
 
-1. **Bloqueio de IP:** Interrupção imediata do tráfego do atacante.
-2. **Rate Limiting:** Limite de requisições para evitar queda do sistema.
-3. **Regras de Firewall:** Configuração preventiva contra novos ataques.
+Resultado e Validação
+A defesa foi bem-sucedida, o sistema foi estabilizado e a integridade das operações foi mantida.
 
-**Flag de Conclusão:** `THM{FAKEBANK-SECURED}`
+Flag de Conclusão: THM{FAKEBANK-SECURED}
+
+
+Obs: Esta atividade faz parte dos meus estudos contínuos em Cibersegurança, unindo os conhecimentos técnicos de Redes de Computadores que estou desenvolvendo no SENAI Jandira com práticas reais de defesa digital.
+Evidências: 
+![caderno](image_a6b19a (2).png)
+
 
